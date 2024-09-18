@@ -1,0 +1,20 @@
+.testimonials {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonial-card {
+    flex: 1 1 300px;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #ececec;
+    border-radius: 8px;
+  }
+  
