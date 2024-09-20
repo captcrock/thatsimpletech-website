@@ -1,18 +1,50 @@
-.hero {
-    text-align: center;
-    padding: 4rem 1rem;
-    background-image: url('../assets/hero-bg.jpg');
-    background-size: cover;
-    color: #fff;
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-image: url('../assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
   }
-  
-  .cta-button {
-    padding: 1rem 2rem;
-    background-color: #ff7a59;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 2rem;
-    display: inline-block;
+
+  .hero-section p {
+    font-size: 1.2rem;
   }
-  
+}

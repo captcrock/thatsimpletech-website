@@ -1,0 +1,38 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .container {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Flex utilities */
+  .flex {
+    display: flex;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  

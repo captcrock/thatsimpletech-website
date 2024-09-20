@@ -1,20 +1,74 @@
 .testimonials {
-    padding: 2rem 1rem;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  .testimonials-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .testimonial-card {
-    flex: 1 1 300px;
-    margin: 1rem;
-    padding: 1.5rem;
-    background-color: #ececec;
-    border-radius: 8px;
-  }
-  
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.testimonial-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-feedback {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.testimonial-name {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial-company {
+  margin-top: 0.5rem;
+  color: #777;
+}
+
+.testimonial-navigation {
+  margin-top: 1rem;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #ff7a59;
+}
+
+/* Add a smooth transition effect */
+.testimonial-card {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.testimonial-container .testimonial-card {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}

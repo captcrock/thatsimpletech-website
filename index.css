@@ -1,0 +1,27 @@
+/* Base styles and CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Global Variables for Light and Dark Mode */
+  :root {
+    --primary-color: #ff7a59;
+    --secondary-color: #ffba93;
+    --background-color: #fff;
+    --text-color: #333;
+  }
+  
+  body.dark-mode {
+    --background-color: #1a1a1a;
+    --text-color: #f0f0f0;
+  }
+  
